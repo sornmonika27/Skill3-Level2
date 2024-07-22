@@ -1,0 +1,45 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+header,footer{
+    height: 100px;
+    background-color: yellow;
+}
+main{
+    flex: 1;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.main-center{
+    flex: 4;
+    background-color: orange;
+}
+.main-left,.main-right{
+    flex: 1;
+    background-color: orchid;
+}
+
+@media (max-width: 600px) {
+    .main-left,.main-right{
+        flex: 100%;
+    }
+    .main-left{
+        display: none;
+    }
+
+   
+}
